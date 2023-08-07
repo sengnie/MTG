@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mtg_ver2:
+    container_name: mtg_v2
+    image: nineseconds/mtg:2
+    restart: always
+    ports:
+      - 5396:5396
+    volumes:
+      - ./config/mtg.toml:/config.toml
+    
